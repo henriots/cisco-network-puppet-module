@@ -474,6 +474,15 @@ Puppet::Type.newtype(:cisco_interface) do
 
     newvalues(:true, :false, :default)
   end # property ipv6_redirects
+  
+  newproperty(:medium) do
+    desc "Sets the interface medium to either point to point or broadcast"
+
+    newvalues(
+      :p2p,
+      :broadcast,
+      :default)
+  end # property medium
 
   # validate ipv4 address and mask combination
   validate do

@@ -64,6 +64,7 @@ Puppet::Type.type(:cisco_interface).provide(:cisco) do
     :load_interval_counter_1_delay,
     :load_interval_counter_2_delay,
     :load_interval_counter_3_delay,
+    :medium,
     :mtu,
     :speed,
     :duplex,
